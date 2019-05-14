@@ -1,0 +1,18 @@
+\hypersetup {hidelinks}
+\contentsline {chapter}{摘要}{I}{chapter*.1}
+\contentsline {chapter}{Abstract}{II}{chapter*.2}
+\contentsline {chapter}{主要符号对照表}{III}{chapter*.3}
+\contentsline {chapter}{\numberline {第1章\hspace {.3em}}绪论}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}本论文研究的目的和意义}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}国内外研究现状及发展趋势}{1}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}形状记忆聚氨酯的形状记忆机理}{1}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}形状记忆聚氨酯的研究进展}{2}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}水系聚氨酯及聚氨酯整理剂}{2}{subsection.1.2.3}
+\contentsline {chapter}{结论}{3}{chapter*.9}
+\contentsline {chapter}{参考文献}{5}{chapter*.10}
+\contentsline {chapter}{\numberline {附录 A\hspace {.3em}}***}{6}{appendix.A}
+\contentsline {chapter}{\numberline {附录 B\hspace {.3em}}Maxwell Equations}{7}{appendix.B}
+\contentsline {chapter}{攻读学位期间发表论文与研究成果清单}{8}{appendix*.11}
+\contentsline {chapter}{致谢}{9}{appendix*.12}
+\contentsline {chapter}{作者简介}{10}{appendix*.13}
+\contentsfinish 

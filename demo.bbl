@@ -1,0 +1,47 @@
+\begin{thebibliography}{6}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{#1}
+\providecommand{\href}[2]{#2}
+\providecommand{\doi}[1]{DOI: \href{http://dx.doi.org/#1}{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax\relax\else
+  \urlstyle{same}\fi
+
+\bibitem[Takahashi\ et~al.(1996)Takahashi, Hayashi, and
+  Hayashi]{Takahashi1996Structure}
+Takahashi T, Hayashi N, Hayashi S.
+\newblock Structure and properties of shape‐memory polyurethane block
+  copolymers\allowbreak[J].
+\newblock Journal of Applied Polymer Science, 1996, 60\penalty0 (7):
+  1061--1069.
+
+\bibitem[Xia\ et~al.(2002)Xia, Chen, Gang, and Itsya]{Xia2002Analysis}
+Xia M, Chen B, Gang Z, et~al.
+\newblock Analysis of affective characteristics and evaluation of harmonious
+  feeling of image based on 1/f fluctuation theory\allowbreak[C].
+\newblock Developments in Applied Artificial Intelligence, International
+  Conference on Industrial and Engineering, Applications of Artificial
+  Intelligence and Expert Systems, Iea/aie 2002, Cairns, Australia, June 17-20,
+  2002, Proceedings.
+\newblock [S.l.: s.n.], 2002: 780--789.
+
+\bibitem[姜锡洲(1989)]{Jiang1989}
+姜锡洲.
+\newblock 一种温热外敷药的制备方法\allowbreak[M].
+\newblock [出版地不详: 出版者不详], 1989.
+
+\bibitem[毛峡(2000)]{Mao2000Motion}
+毛峡.
+\newblock 情感工学破解"舒服"之谜\allowbreak[J].
+\newblock 科技文萃, 2000\penalty0 (7): 157--158.
+
+\bibitem[冯西桥\ 等(1998)冯西桥 and 何树延]{Feng1998}
+冯西桥, 何树延.
+\newblock 核反应堆管道和压力容器的lbb分析\allowbreak[J].
+\newblock 力学进展, 1998, 28\penalty0 (2): 198--217.
+
+\bibitem[姜敏\ 等(2005)姜敏, 彭少贤, and 郦华兴]{Jiang2005Size}
+姜敏, 彭少贤, 郦华兴.
+\newblock 形状记忆聚合物研究现状与发展\allowbreak[J].
+\newblock 现代塑料加工应用, 2005, 17\penalty0 (2): 53--56.
+
+\end{thebibliography}
