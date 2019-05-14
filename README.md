@@ -9,7 +9,7 @@ LaTeX Template for BIT thesis
 - 新增\sayThanks命令，用于致谢。在盲审模式下该命令指定的致谢内容将不被显示。
 - 新增\insertContents、\insertFigure、\insertTable、\insertEquation系列指令，该指令用于自查重模式下选择性指定不显示的内容。}
 - 新增\ncite、\nupcite、\nref命令，自查重模式下将不显示。
-- 修复了官方v1.5版本中文献引用标注显示的字号和颜色。
+- 修改了官方v1.5版本中文献引用标注显示的字号和颜色。
 - 目录中章节标题取消加粗显示。
 - 打印中文信息的命令更改为\makeChineseInfo,在盲审模式下不显示中英文个人信息。
 - 修改英文信息中下划线的长度。
