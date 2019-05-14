@@ -6,7 +6,7 @@ LaTeX Template for BIT thesis
 - 增加书脊中作者姓名显示。
 - 增加对mathptmx包的引用，修改公式字体为New Time Roman。
 - 新增\pubitem命令，用于显示学术成果。在盲审模式下该命令将会隐去作者信息。
-- 新增$\backslash$sayThanks命令，用于致谢。在盲审模式下该命令指定的致谢内容将不被显示。
+- 新增\sayThanks命令，用于致谢。在盲审模式下该命令指定的致谢内容将不被显示。
 - 新增\insertContents、\insertFigure、\insertTable、\insertEquation系列指令，该指令用于自查重模式下选择性指定不显示的内容。}
 - 新增\ncite、\nupcite、\nref命令，自查重模式下将不显示。
 - 修复了官方v1.5版本中文献引用标注显示的字号和颜色。
