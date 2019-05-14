@@ -27,8 +27,8 @@
 \classification{TQ028.1} %可参考http://www.clcindex.com/category/TN91/
 \UDC{540}
 
-\title{形状记忆聚氨酯的RapidIO合成及其在织物中的应用}
-\vtitle{形状记忆聚氨酯的\makeVerticalenWords{RapidIO} 合成及其在织物中的应用}
+\title{这是一个有英文单词RapidIO的论文标题}
+\vtitle{这是一个有英文单词\makeVerticalenWords{RapidIO}的竖排标题}
 \author{张三}
 \institute{信息与电子学院}
 \advisor{**教授}
@@ -41,7 +41,7 @@
 
 
 % 英文封面内容(关注内容而不是表现形式)
-\englishtitle{Synthesis and Application on textile of the Shape\\Memory Polyurethane}
+\englishtitle{A Thesis Title with English word RapidIO}
 \englishauthor{Zhangsan}
 \englishadvisor{Prof. **}
 \englishchairman{Prof. **}
@@ -80,6 +80,7 @@
 
 
 %加入图、表索引(同时取消图表索引中章之间的垂直间隔)
+%硕士论文貌似不做硬性要求，可不加
 \let\origaddvspace\addvspace
 \renewcommand{\addvspace}[1]{}
 \listoffigures
@@ -98,31 +99,36 @@
 
 %%%%%%%%%%%%%论文正文部分%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \include{chapters/chapter1/chapter1}
-
-%结论
-\include{chapters/conclusion}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%以下部分仅用于举例样式%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-接下来这段话不会被显示\fbox{\insertContents{$\tau$自查重模式下看不到的句子}}\\
+\chapter{部分新增命令使用示例}
+\fbox{自查重模式下使用$\backslash$insert*系列命令指定的内容将不被显示。}\\
+\begin{lstlisting}[language={tex}, caption={$\backslash$insert*系列指令使用示例}]
 \insertContents{
-	If this part is shown, then the current mode is not similar self-check
-	\begin{equation}
-		E = mc^2
-	\end{equation}
-	\begin{equation}
-	\begin{split}
-		P_{f1} (\hat{d}) &= \sum_{n=0}^{N/4 -1}r^{*}(\hat{d}+n+N/2) r(\hat{d}+3N/4+n) \\
-		&= e^{j\pi \varepsilon /2}\sum_{n=0}^{N/4 -1}s^{*}(\hat{d}+n+N/2) s(\hat{d}+3N/4+n) \\
-		&= e^{j\pi \varepsilon /2}\sum_{n=0}^{N/4 -1}\left|s(\hat{d}+n+N/2)\right|^2 
-	\end{split}
-	\end{equation}
+	anything contents....
+}
+\insertFigure{
+	\begin{figure}
+		.......
+	\end{figure}
+}
+\insertTable{
+	\begin{table}
+		.......
+	\end{table}
 }
 \insertEquation{
-	If this part is shown, then the current mode is not similar self-check
 	\begin{equation}
-		E = mc^2
+		......
 	\end{equation}
 }
+\end{lstlisting}
+%结论
+
+自查重模式下使用$\backslash$ncite、$\backslash$nupcite、$\backslash$nref命令进行的引用，引用标注将不显示。使用方式同$\backslash$cite、$\backslash$upcite、$\backslash$ref。
+
+\include{chapters/conclusion}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% 参考文献，五号字，使用 BibTeX，包含参考文献文件.bib
 %\bibliography{reference/chap1,reference/chap2} %多个章节的参考文献
