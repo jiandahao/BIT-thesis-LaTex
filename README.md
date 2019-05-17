@@ -15,4 +15,4 @@ LaTeX Template for BIT thesis
 - 修改英文信息中下划线的长度。
 
 
-LaTeX 论文写作填坑/拓展指南 & 模板简介可参考<https://github.com/jiandahao/BIT-thesis-LaTex-Ref>,欢迎补充完善。。。
+LaTeX 论文写作填坑/拓展指南 & 模板简介可参考Helper_manual/Helper_manual.pdf,欢迎补充完善。。。
