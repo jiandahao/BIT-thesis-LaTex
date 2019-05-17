@@ -13,3 +13,6 @@ LaTeX Template for BIT thesis
 - 目录中章节标题取消加粗显示。
 - 打印中文信息的命令更改为\makeChineseInfo,在盲审模式下不显示中英文个人信息。
 - 修改英文信息中下划线的长度。
+
+
+LaTeX 论文写作填坑/拓展指南 & 模板简介可参考<https://github.com/jiandahao/BIT-thesis-LaTex-Ref>,欢迎补充完善。。。
