@@ -1,0 +1,44 @@
+%%==================================================
+%% abstract.tex for BIT Master Thesis
+%% Edited by Jian dahao
+%% version: 1.0
+%% last update: May 10th, 2019
+%%==================================================
+\chapter{参考文献的使用}
+\section{参考文献的管理}
+论文模板使用BibTeX 处理参考文献，BibTeX 是最为流行的参考文献
+数据组织格式之一。它的出现让我们摆脱手写参考文献条目的麻烦。当然，使用者也
+可以手动编参考文献item，直接插入文档中。但是，有BibTeX 帮助，处理起参考文
+献更为简单。我们还可以通过参考文献格式的支持，让同一份BibTeX 数据库生成不
+同格式的参考文献列表。
+
+参考文献的具体内容就是reference 文件夹下的references.bib，参考文献的元数据(名
+称、作者、出处等) 以一定的格式保存在这些纯文本文件中。.bib 文件也可以理解为参
+考文献的‘‘数据库’’，正文中所有引用的参考文件条目都会从这些文件中‘‘析出’’。控
+制参考文献条目‘‘表现形式”(格式) 的是.bst 文件。.bst 文件定义了参考文献风格，使
+用不同的参考文献风格能将同一个参考文献条目输出成不同的格式。当然，一个文档
+只能使用一个参考文献风格。按照学校要求，本模板使用的是国标GBT7714 风格的
+参考文献。
+BibTeX 的工作过程是这样的：BibTeX 读取.aux(第一次运行latex 得到的) 查看参
+考文献条目，然后到.bib 中找相关条目的信息，最后根据.bst 的格式要求将参考文献
+条目格式化输出，写到.bbl 文件中。在运行latex 将.bbl 插入文档之前，可以用文本编辑器打开它，做一些小的修改。
+\begin{lstlisting}[language={tex}, caption={.bib条目示例}]
+@inproceedings{JianDahao2018,
+author = {Jian, Dahao and Wu, Haixia and Gao, Wei and Jiang, Rongkun},
+year = {2018},
+month = {09},
+pages = {1-5},
+booktitle = {2018 IEEE International Conference on Signal Processing, Communications and Computing (ICSPCC)},
+title = {A Novel Timing Synchronization Method Based on CAZAC Sequence for OFDM Systems},
+doi = {10.1109/ICSPCC.2018.8567818}
+}
+\end{lstlisting}
+.bib 数据库中的参考文献条目可以手动编写，也可以在google学术、百度学术等搜索中找到。注意要选择Bibtex格式。
+\section{参考文献的编译}
+bib文件与tex文件的编译时分开，需要用Bibtex先对bib文件进行编译，再编译tex。
+\\
+\fbox{\color{blue}如果无法正确显示参考文献,需要多编译几次。}
+
+\section{参考文献的引用}
+正文中引用参考文献时，用$\backslash$upcite\{key1,key2,key3...\} 可以产生“上标引用的参考文献”，如\upcite{JianDahao2018}。使用$\backslash$cite\{key1,key2,key3...\} 则可以产生水平引用的参考文献，例如\cite{JianDahao2018}。
+如果要使用自查重模式时关闭引用标注的显示，在模板BIT-thesis-LaTex（使用BIT-thesis-grd-jdh.cls格式控制文件）中提供了$\backslash$nupcite和$\backslash$ncite可供使用（这两种命令在非自查重模式下，分别与$\backslash$upcite、$\backslash$cite等效）。

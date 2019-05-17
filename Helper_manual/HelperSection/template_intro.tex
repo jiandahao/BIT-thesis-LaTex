@@ -1,0 +1,76 @@
+%%==================================================
+%% abstract.tex for BIT Master Thesis
+%% Edited by Jian dahao
+%% version: 1.0
+%% last update: May 10th, 2019
+%%==================================================
+\chapter{模板入门}
+重点查看官方模板中的BIT-Thesis使用指南v1.1手册。需要另外说明的是，为了更好的进行文章结构的管理，在章节文件夹中添加了chapter1文件夹用于演示对每一章节文件的组织。此外，新增了配置文件BIT-thesis-grd-jdh.cls，该配置控制文件是基于官方提供的BIT-thesis-grd.cls进行修改，具体区别参见第\ref{section:与官方模板的区别}一节。
+\section{模板结构初识}
+\begin{lstlisting}[language={tex}, caption={模板文件布局}]
+demo.tex      							主控文件
+demo.pdf   								生成的pdf文件
+BIT-thesis-grd.cls 						官方提供的格式控制文件
+BIT-thesis-grd-jdh.cls  				新增的格式控制文件，基于BIT-thesis-grd.cls修
+										改，模板默认使用该控制文件
+GBT7714-2005NLang  						参考文献格式控制文件<写论文过程中基本不需要修
+										改，知道是什么就好了>
+chapters 								章节文件夹
+		abstract.tex 					摘要
+		chapter1 						第一章文件夹
+			chapter1.tex 				第一章内容主文件
+				chapter1_1.tex 			第一章第一节
+				chapter1_2.tex 			第一章第二节
+			figures 					第一章图片存储文件夹
+		conclusion.tex 					总结
+		pub.tex 						攻读学位期间发表论文与研究成果清单
+		app1.tex						附录A <无硬性要求，可不加>
+		thanks.tex 						致谢
+		resume.tex 						个人简历
+reference								参考文献管理文件夹
+		references.bib 					Bibtex文件，记录参考文献条目
+BIT-thesis-run.bat 						Windows 编译脚本
+BIT-thesis-run.sh 						Linux 编译脚本
+\end{lstlisting}
+\section{如何创建章节标题}
+\begin{lstlisting}[language={tex}, caption={章节创建命令}]
+创建新的章节						\chapter{新章节标题}
+创建一级标题						\section{一级标题}
+创建二级标题						\subsection{二级标题}
+创建三级标题						\subsubsection{三级标题} ，模板中三级标题在正
+									文能正常显示，但不会在目录中显示
+\end{lstlisting}
+具体使用参见模板工程。如果正文中需要对章节进行引用，则可以在章节标题之后添加$\backslash$label
+\begin{lstlisting}[language={tex}, caption={添加标签}]
+\chapter{新章节标题}\label{chapter:这是一章}
+\section{一级标题}\label{chapter:这是一节}
+
+在文中的引用形式为\ref{chapter:这是一章}
+\end{lstlisting}
+\section{章节结构管理}
+由于毕业论文篇幅较大，如果统统只写在一个文件里将非常不便于管理。可将各章节各小节分别写在独立的tex文件里，并且将图片、表格等也用文件夹进行管理。
+
+在主控文件中通过$\backslash$include命令插入文件内容，在其他文件中应使用$\backslash$input命令完文件内容插入。具体请参考模板进行举一反三。
+\begin{lstlisting}[language={tex}, caption={如何包含文件}]
+demo.tex中： \include{chapters/chapter1/chapter1}
+其他非顶层文件：\input{chapters/chapter1/chapter1_1}
+\end{lstlisting}
+
+\section{与官方模板的区别}
+\label{section:与官方模板的区别}
+该模板基于官方v1.5版本修改，主要功能区别如下
+\begin{enumerate}
+\item 新增普通模式(normal)、自查重模式(selfSimilarCheck)和盲审模式(blindCheck)。提交学校的查重文件可以直接使用normal模式结果
+；自查重模式主要用于关闭图片、公式等内容的显示，以减少文章字符数和降低PDF转word过程中出现的乱码，节省查重费用支出。应结合$\backslash$insertContents等系列命令使用。对于土豪此选项没有任何卵用。。。。。；盲审模式主要根据盲审文件格式要求，隐去了作者、导师、致谢等信息，更改发表论文的格式
+\item 增加$\backslash$makeVerticalenWords命令，修改英文单词树立排放时的显示效果。
+\item 增加书脊中作者姓名显示。
+\item 增加对mathptmx包的引用，修改公式字体为New Time Roman。
+\item{新增$\backslash$pubitem命令，用于显示学术成果。在盲审模式下该命令将会隐去作者信息。}
+\item{新增$\backslash$sayThanks命令，用于致谢。在盲审模式下该命令指定的致谢内容将不被显示。}
+\item{新增$\backslash$insertContents、$\backslash$insertFigure、$\backslash$insertTable、$\backslash$insertEquation系列指令，该指令用于自查重模式下选择性指定不显示的内容。}
+\item{新增$\backslash$ncite、$\backslash$nupcite、$\backslash$nref命令，自查重模式下将不显示}
+\item{修复了官方v1.5版本中文献引用标注显示的字号和颜色。}
+\item{目录中章节标题取消加粗显示}
+\item{打印中文信息的命令更改为$\backslash$makeChineseInfo}
+\item{修改英文信息中下划线的长度。}
+\end{enumerate}

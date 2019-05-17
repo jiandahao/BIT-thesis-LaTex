@@ -1,0 +1,18 @@
+\begin{thebibliography}{1}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{#1}
+\providecommand{\href}[2]{#2}
+\providecommand{\doi}[1]{DOI: \href{http://dx.doi.org/#1}{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax\relax\else
+  \urlstyle{same}\fi
+
+\bibitem[Jian\ et~al.(2018)Jian, Wu, Gao, and Jiang]{JianDahao2018}
+Jian D, Wu H, Gao W, et~al.
+\newblock \href{http://dx.doi.org/10.1109/ICSPCC.2018.8567818}{A novel timing
+  synchronization method based on cazac sequence for ofdm
+  systems}\allowbreak[C].
+\newblock 2018 IEEE International Conference on Signal Processing,
+  Communications and Computing (ICSPCC).
+\newblock 2018: 1--5.
+
+\end{thebibliography}

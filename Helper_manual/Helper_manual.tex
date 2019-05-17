@@ -1,0 +1,64 @@
+%%==================================================
+%% demo.tex for BIT Thesis
+%% modified by yang yating
+%% version: 1.0
+%% last update: Sep. 1st, 2017
+%%==================================================
+
+% 默认单面打印 oneside 、硕士论文模板 master
+
+\documentclass[oneside, master,normal]{BIT-thesis-grd-jdh}
+%\usepackage{mathptmx}
+% \usepackage[justification=centering]{caption}
+% 打印选项： 双面打印 oneside；单面打印 twoside
+% 模板选项： 硕士论文 master； 博士论文 doctor
+\usepackage{listings} 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 封面
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% 中文封面内容(关注内容而不是表现形式)
+% \classification{TN914.3}
+% \UDC{540}
+
+\title{LaTeX论文写作填坑/拓展指南}
+\vtitle{LaTeX论文写作填坑/拓展指南}
+\author{JDH}
+
+\defenddate{2019年5月}
+
+% 封面绘制
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 前置部分
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\frontmatter
+\allowdisplaybreaks
+
+% 加入目录
+\tableofcontents
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% 正主体部分
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\mainmatter
+
+%% 各章正文内容
+%\include{chapters/WritingReference}
+\include{HelperSection/preamble}
+\include{HelperSection/template_intro}
+\include{HelperSection/equation}
+\include{HelperSection/figure_table}
+\include{HelperSection/reference}
+\include{HelperSection/notes}
+
+
+%(其后部分无编号)
+\backmatter
+
+
+\bibliography{references/references}
+\end{document}
