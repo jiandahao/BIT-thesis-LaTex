@@ -17,7 +17,7 @@ LaTeX 论文写作填坑/拓展指南 & 模板简介可参考Helper_manual/Helpe
 - 打印中文信息的命令更改为\makeChineseInfo,在盲审模式下不显示中英文个人信息。
 - 修改英文信息中下划线的长度。
 
-## 使用VScode编辑论文模板方法
+### 使用VScode编辑论文模板方法
 - 下载安装VScode，搜索安装LaTeX WorkShop插件
 - 选择“文件-首选项-设置”进入设置界面，搜索“setting.json”打开，添加项目中“setting.json”文件内容
 - 使用VScode时，选择LATEX-COMMANDS-Build LaTeX project-Recipe：BIT_thesis，保存文档后编辑器会根据设置自动编译更新。 
