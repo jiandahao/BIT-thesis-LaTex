@@ -16,12 +16,13 @@ LaTeX 论文写作填坑/拓展指南 & 模板简介可参考Helper_manual/Helpe
 \documentclass[oneside, doctor, normal]{BIT-thesis-grd-jdh} %博士模板 
 ```
 - 模板选项： 硕士论文 master； 博士论文 doctor
-- 正常模式：normal  自查重模式：selfSimilarCheck  盲审模式：blindCheck
-（1）提交学校的查重文件可以直接使用normal模式结果;
+- 编译模式：正常模式（normal）；自查重模式（selfSimilarCheck）；盲审模式（blindCheck）
 
-（2）自查重模式主要用于关闭图片、公式等内容的显示，以减少文章字符数和降低PDF转word过程中出现的乱码，节省查重费用支出。应结合\insertcontents系列命令使用。对于土豪此选项没有任何卵用。。。。。;
+  （1）提交学校的查重文件可以直接使用normal模式结果;
 
-（3）盲审模式主要根据盲审文件格式要求，隐去了作者、导师、致谢等信息，更改发表论文的格式。
+  （2）自查重模式主要用于关闭图片、公式等内容的显示，以减少文章字符数和降低PDF转word过程中出现的乱码，节省查重费用支出。应结合\insertcontents系列命令使用。对于土豪此选项没有任何卵用。。。。。;
+
+  （3）盲审模式主要根据盲审文件格式要求，隐去了作者、导师、致谢等信息，更改发表论文的格式。
 
 所有.tex都采用**UTF-8**编码格式
 ##  通过 XeLaTeX 编译
