@@ -25,7 +25,7 @@ LaTeX 论文写作填坑/拓展指南 & 模板简介可参考Helper_manual/Helpe
   （3）盲审模式主要根据盲审文件格式要求，隐去了作者、导师、致谢等信息，更改发表论文的格式。
 
 所有.tex都采用**UTF-8**编码格式
-##  通过 XeLaTeX 编译
+###  通过 XeLaTeX 编译
 - 手动模式编译：完整的处理流程是：
 ```
     xelatex -no-pdf --interaction=nonstopmode demo
